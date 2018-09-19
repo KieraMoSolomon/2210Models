@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: Shoe.ma
-//Last modified: Wed, Sep 19, 2018 04:38:56 PM
+//Last modified: Wed, Sep 19, 2018 04:46:45 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 currentUnit -l centimeter -a degree -t film;
@@ -13,19 +13,18 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "A34C053E-394B-D2C8-7C13-2184BBE1D9F0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 25.828837425114394 6.7855140223420678 15.65224527977799 ;
-	setAttr ".r" -type "double3" 1078.0037340964357 52.107266547294593 -7910.5306736067196 ;
-	setAttr ".rp" -type "double3" 0 1.3322676295501878e-15 0 ;
-	setAttr ".rpt" -type "double3" -7.1389202669802278e-16 3.8529204841437239e-16 -2.9367017687715513e-15 ;
+	setAttr ".t" -type "double3" 14.820325155764683 9.6010574463676406 4.5326757933374102 ;
+	setAttr ".r" -type "double3" -7.4890569039102948 59.189729890619894 11.377863778519075 ;
+	setAttr ".rpt" -type "double3" -7.08724689525112e-16 3.9284356757829537e-16 -3.0782558653454939e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6A842094-734F-3EAA-8CDE-FEAB2170A98A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 34.681114792869067;
+	setAttr ".coi" 19.495726671816616;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -0.95210566351949089 1.0938749301468649 -5.6354519889211971 ;
+	setAttr ".tp" -type "double3" -0.9535530607763002 3.8348775969383011 -5.367793610482507 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "55C9251B-604F-70B4-7565-88AC8F010ED2";
